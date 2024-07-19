@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pranavi Nagarapu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pranavi's</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Pranavi</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pranavi-n-42021b23b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/pranavinn'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Final Year Student developed full stack projects and deep learning models</h3>
+              
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Engineering In<br />Chaitanya Bharathi Institute of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Driven by a passion for software development and an unwavering commitment to innovation, I excel at transforming complex problems into impactful solutions. My enthusiasm for technology fuels my continuous learning and keeps me at the forefront of industry trends. With a focus on excellence, I thrive in dynamic team environments, always eager to contribute and make a meaningful difference.
+
+
+          </p>
+          
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h2 class="skills-category-title">Programming Languages</h2>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Competitive Coding</h2>
+          <p>Various competitive coding platforms experience</p>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Database</h2>
+          <ul class="skills-list">
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Academic Excellence</h2>
+          <ul class="skills-list">
+            <li>Data Structures</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Frameworks</h2>
+          <ul class="skills-list">
+            <li>ExpressJS</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-Learn</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Web Technologies</h2>
+          <ul class="skills-list">
+            <li>MERN Stack</li>
+            <li>PHP</li>
+            <li>Next.js</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Machine Learning</h2>
+          <p>Deep Learning Models</p>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Soft Skills</h2>
+          <ul class="skills-list">
+            <li>Problem Solving</li>
+            <li>Analytic Abilities</li>
+            <li>Team Player</li>
+            <li>Excellent Communication</li>
+            <li>Self-Motivated</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h2 class="skills-category-title">Certifications</h2>
+          <ul class="skills-list">
+            <li>Google Cyber Security Foundations</li>
+            <li>AWS Cloud Essentials</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              src="./assets/project-1.jpeg"
+              alt="Finance Organizer"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Community Food Redistribution Platform</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='https://github.com/pranavinn/Community_Food_Redistribution'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              src="./assets/project-2.webp"
+              alt="Activity Detection System"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Activity Detection System</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image-container">
+            <img
+              src="./assets/project-3.png"
+              alt="Decentralized Trade Network"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Decentralized Trade Network</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Pragnyakancharla589@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sai-pragnya-kancharla">LinkedIn</a></p>
+
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
